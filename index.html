@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrega Rápida</title>
+
+    <!-- liga o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1> Entrega Rápida</h1>
+    <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#como">Como Funciona</a>
+        <a href="#pedido">Pedido</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Entregas rápidas e seguras</h2>
+    <p>Levamos o que você precisa, onde você estiver.</p>
+    <button onclick="irPedido()">Peça Agora</button>
+</section>
+
+<section id="servicos">
+    <h2>Serviços</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3> Coleta e Entrega</h3>
+            <p>Buscamos e entregamos com rapidez.</p>
+        </div>
+
+        <div class="card">
+            <h3>Documentos</h3>
+            <p>Transporte seguro de documentos.</p>
+        </div>
+
+        <div class="card">
+            <h3> Compras</h3>
+            <p>Fazemos compras e entregamos pra você.</p>
+        </div>
+    </div>
+</section>
+
+<section id="como">
+    <h2>Como Funciona</h2>
+    <ol>
+        <li>Você faz o pedido</li>
+        <li>Buscamos no local</li>
+        <li>Entregamos no destino</li>
+    </ol>
+</section>
+
+<section id="pedido">
+    <h2>Faça seu Pedido</h2>
+
+    <input type="text" id="nome" placeholder="Seu nome">
+    <input type="text" id="coleta" placeholder="Endereço de coleta">
+    <input type="text" id="entrega" placeholder="Endereço de entrega">
+
+    <input type="number" id="km" placeholder="Distância (km)">
+    <input type="number" id="valorKm" value="2.5">
+    <input type="number" id="taxaMinima" value="10">
+
+    <h3>Total: R$ <span id="total">0.00</span></h3>
+
+    <button onclick="calcular()">Calcular</button>
+    <button onclick="enviar()">Enviar pelo WhatsApp</button>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>📞 WhatsApp: (11) 98765-4321</p>
+</section>
+
+<footer>
+    <p>© 2026 - Entrega Rápida</p>
+</footer>
+
+<!-- liga o JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
