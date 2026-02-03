@@ -1,88 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Entrega Rápida</title>
-
-    <!-- liga o CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>ZENTIS | Entregas Inteligentes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1> Entrega Rápida</h1>
-    <nav>
-        <a href="#servicos">Serviços</a>
-        <a href="#como">Como Funciona</a>
-        <a href="#pedido">Pedido</a>
-        <a href="#contato">Contato</a>
-    </nav>
-</header>
+  <header class="topo">
+    <img src="logo.png" alt="Zentis Logo" class="logo">
+    <h1>ZENTIS</h1>
+    <p>Entregas rápidas, seguras e inteligentes</p>
+  </header>
 
-<section class="hero">
-    <h2>Entregas rápidas e seguras</h2>
-    <p>Levamos o que você precisa, onde você estiver.</p>
-    <button onclick="irPedido()">Peça Agora</button>
-</section>
+  <section class="hero">
+    <h2>Eficiência para suas entregas</h2>
+    <p>Coletas e entregas sob demanda, com preço justo e rapidez.</p>
+    <a href="#pedido" class="botao">Faça seu pedido</a>
+  </section>
 
-<section id="servicos">
-    <h2>Serviços</h2>
+  <section class="servicos">
+    <h2>Nossos Serviços</h2>
 
-    <div class="cards">
-        <div class="card">
-            <h3> Coleta e Entrega</h3>
-            <p>Buscamos e entregamos com rapidez.</p>
-        </div>
-
-        <div class="card">
-            <h3>Documentos</h3>
-            <p>Transporte seguro de documentos.</p>
-        </div>
-
-        <div class="card">
-            <h3> Compras</h3>
-            <p>Fazemos compras e entregamos pra você.</p>
-        </div>
+    <div class="card">
+      <h3>📦 Coleta e Entrega</h3>
+      <p>Buscamos e entregamos onde você precisar.</p>
     </div>
-</section>
 
-<section id="como">
-    <h2>Como Funciona</h2>
-    <ol>
-        <li>Você faz o pedido</li>
-        <li>Buscamos no local</li>
-        <li>Entregamos no destino</li>
-    </ol>
-</section>
+    <div class="card">
+      <h3>📄 Documentos</h3>
+      <p>Transporte seguro e rápido de documentos.</p>
+    </div>
 
-<section id="pedido">
+    <div class="card">
+      <h3>🛒 Compras</h3>
+      <p>Compramos e entregamos pra você.</p>
+    </div>
+  </section>
+
+  <section id="pedido" class="pedido">
     <h2>Faça seu Pedido</h2>
 
-    <input type="text" id="nome" placeholder="Seu nome">
-    <input type="text" id="coleta" placeholder="Endereço de coleta">
-    <input type="text" id="entrega" placeholder="Endereço de entrega">
+    <input type="text" placeholder="Seu nome">
+    <input type="text" placeholder="Endereço de coleta">
+    <input type="text" placeholder="Endereço de entrega">
+    <input type="number" placeholder="Distância (km)">
 
-    <input type="number" id="km" placeholder="Distância (km)">
-    <input type="number" id="valorKm" value="2.5">
-    <input type="number" id="taxaMinima" value="10">
+    <button>Calcular Entrega</button>
+  </section>
 
-    <h3>Total: R$ <span id="total">0.00</span></h3>
-
-    <button onclick="calcular()">Calcular</button>
-    <button onclick="enviar()">Enviar pelo WhatsApp</button>
-</section>
-
-<section id="contato">
-    <h2>Contato</h2>
-    <p>📞 WhatsApp: (11) 98765-4321</p>
-</section>
-
-<footer>
-    <p>© 2026 - Entrega Rápida</p>
-</footer>
-
-<!-- liga o JS -->
-<script src="script.js"></script>
+  <footer>
+    <p>📱 WhatsApp: (11) 98765-4321</p>
+    <p>© 2026 - ZENTIS</p>
+  </footer>
 
 </body>
 </html>
